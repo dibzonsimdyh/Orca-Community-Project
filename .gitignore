@@ -1,0 +1,124 @@
+# Dependencies
+node_modules/
+jspm_packages/
+
+# Production builds
+dist/
+build/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output/
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components/
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript v1 output
+*.tsbuildinfo
+
+# TypeScript cache
+*.cache.ts
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache directory
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.test
+
+# next.js build output
+.next/
+
+# nuxt.js build output
+.nuxt/
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Yarn 2
+.yarn/
+.pnp.*
+
+# Client specific
+client/node_modules/
+client/build/
+client/dist/
+client/.next/
+
+# Server specific
+server/node_modules/
+server/dist/
+server/build/
+
+# Editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

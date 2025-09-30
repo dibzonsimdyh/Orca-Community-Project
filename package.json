@@ -1,0 +1,27 @@
+{
+  "name": "orca-community-platform",
+  "version": "1.0.0",
+  "description": "A community-based platform with CRUD functionality",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  },
+  "keywords": [
+    "community",
+    "platform",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Orca Team",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^2.5.8"
+  },
+  "packageManager": "npm@8.3.1",
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
