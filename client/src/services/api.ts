@@ -8,6 +8,12 @@ const api = axios.create({
   baseURL: API_BASE_URL,
 });
 
+// Attach token from localStorage if present
+const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+if (token) {
+  api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+}
+
 export const postAPI = {
   // Get all posts
   getPosts: async () => {

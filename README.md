@@ -115,3 +115,26 @@ In the client directory:
 In the server directory:
 - `npm run dev` - Start the development server with nodemon
 - `npm run start` - Start the production server
+
+## Auth / Server setup
+
+The project now includes email/password auth endpoints backed by MongoDB. Quick notes:
+
+- POST `/api/auth/register` — Accepts { name, email, password } and returns { user, token } on success.
+- POST `/api/auth/login` — Accepts { email, password } and returns { user, token } on success.
+
+Environment variables (create a `.env` in the `server/` folder):
+
+- `MONGODB_URI` - MongoDB connection string (e.g. `mongodb://localhost:27017/orca-community`)
+- `JWT_SECRET` - Secret used to sign JWT tokens (set to a long random string in production)
+
+Install server deps and run:
+
+1. cd server
+2. npm install
+3. npm run dev    # starts with nodemon
+
+Notes:
+
+- Passwords are hashed with bcrypt before saving to MongoDB.
+- The client stores the returned JWT in localStorage and attaches it to API requests via the Authorization header.
