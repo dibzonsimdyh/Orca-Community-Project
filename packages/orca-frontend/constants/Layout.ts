@@ -1,5 +1,0 @@
-export const Layout = {
-  SIDEBAR_DESKTOP_WIDTH: 280,
-  SIDEBAR_MOBILE_WIDTH: 240,
-  HEADER_HEIGHT: 60,
-};
